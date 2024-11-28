@@ -59,7 +59,7 @@ public class FooterBooster : MonoBehaviour
 		else
 		{
 			ShopDialog shopDialog = (ShopDialog)DialogController.instance.GetDialog(DialogType.Shop);
-			shopDialog.GetComponent<TabBehaviour>().SetCurrentTab(0);
+			// shopDialog.GetComponent<TabBehaviour>().SetCurrentTab(0);
 			DialogController.instance.ShowDialog(shopDialog);
 		}
 	}

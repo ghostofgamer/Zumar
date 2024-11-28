@@ -37,6 +37,7 @@ public class ShopDialog : Dialog
 		}
 		else
 		{
+			return;
 			Toast.instance.ShowMessage("Not enough rubies, please buy more.");
 			GetComponent<TabBehaviour>().SetCurrentTab(1);
 		}
