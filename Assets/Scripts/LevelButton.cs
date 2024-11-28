@@ -56,9 +56,9 @@ public class LevelButton : MonoBehaviour
 
         if (level == unlockLevel)
         {
-            GameObject gameObject = UnityEngine.Object.Instantiate(starEffect,
+            /*GameObject gameObject = UnityEngine.Object.Instantiate(starEffect,
                 base.transform.position - Vector3.forward, Quaternion.identity);
-            gameObject.transform.SetParent(base.transform);
+            gameObject.transform.SetParent(base.transform);*/
             component.SetActiveSprite(isActive: true);
             /*if (_image != null)
                 _image.sprite = _unlockedSprite;*/
