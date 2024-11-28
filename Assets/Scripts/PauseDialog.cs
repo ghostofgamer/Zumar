@@ -47,8 +47,8 @@ public class PauseDialog : YesNoDialog
 
 	public void SaveSetting()
 	{
-		Music.instance.SetEnabled(music.isOn, updateMusic: true);
-		Sound.instance.SetEnabled(sound.isOn);
+		/*Music.instance.SetEnabled(music.isOn, updateMusic: true);
+		Sound.instance.SetEnabled(sound.isOn);*/
 	}
 
 	public void CloseDialog()

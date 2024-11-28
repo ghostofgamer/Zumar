@@ -34,7 +34,6 @@ public class CButton : MonoBehaviour
 
 	public void SetActiveSprite(bool isActive)
 	{
-		Debug.Log("BOOL " + isActive);
 		this.isActive = isActive;
 		if (button != null)
 		{
