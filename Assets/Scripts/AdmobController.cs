@@ -72,7 +72,7 @@ public class AdmobController : MonoBehaviour
     //init handle
     private void HandleInitCompleteAction(InitializationStatus initstatus)
     {
-        Debug.Log("Initialization complete.");
+        // Debug.Log("Initialization complete.");
 
         // Callbacks from GoogleMobileAds are not guaranteed to be called on
         // the main thread.
@@ -375,7 +375,7 @@ public class AdmobController : MonoBehaviour
         //interstitialAd.LoadAd(request);
 
 
-        Debug.Log("Leule");
+        // Debug.Log("Leule");
     }
 
     //showinter
@@ -425,7 +425,7 @@ public class AdmobController : MonoBehaviour
         rewardedAd.OnAdLoaded += (sender, args) =>
         {
             //PrintStatus("Reward ad loaded.");
-            Debug.Log("Zeule");
+            // Debug.Log("Zeule");
             OnAdLoadedEvent.Invoke();
         };
         rewardedAd.OnAdFailedToLoad += (sender, args) =>

@@ -35,7 +35,7 @@ public class LevelButton : MonoBehaviour
         else if (level < unlockLevel)
         {
             component.SetActiveSprite(isActive: true);
-            Debug.Log("UNLOCKED");
+            // Debug.Log("UNLOCKED");
             stars.gameObject.SetActive(value: true);
             switch (LevelController.GetNumStar(level, 1))
             {
