@@ -556,6 +556,9 @@ public class CUtils
 
 	public static void LoadScene(int sceneIndex, bool useScreenFader = false)
 	{
+		DoLoadScene(sceneIndex);
+		return;
+		
 		if (useScreenFader)
 		{
 			ScreenFader.instance.GotoScene(sceneIndex);

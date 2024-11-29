@@ -398,6 +398,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 731031128}
   m_CullTransparentMesh: 0
+--- !u!114 &859306335
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1790492663808471379}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5d5991e8729a84a4b8e9767eb6d8c4c5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1385124159
 GameObject:
   m_ObjectHideFlags: 0
@@ -994,6 +1006,7 @@ GameObject:
   - component: {fileID: 1790492665704296841}
   - component: {fileID: 1790492665704296840}
   - component: {fileID: 1790492665385529708}
+  - component: {fileID: 859306335}
   m_Layer: 5
   m_Name: ButtonPlay
   m_TagString: 
@@ -1635,9 +1648,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1790492665704296835}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: TouchStartClick
+      - m_Target: {fileID: 859306335}
+        m_TargetAssemblyTypeName: PlayButton, Assembly-CSharp
+        m_MethodName: LoadScene
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
