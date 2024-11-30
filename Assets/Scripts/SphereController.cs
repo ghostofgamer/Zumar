@@ -295,20 +295,24 @@ public class SphereController : MonoBehaviour
 	{
 		if (!type.HasValue)
 		{
+			Debug.Log("1");
 			int num = (currentTypes != null && currentTypes.Count != 0) ? ((int)CUtils.GetRandom(currentTypes.ToArray()).type) : UnityEngine.Random.Range(0, MonoUtils.instance.spheres.Length);
 			return UnityEngine.Object.Instantiate(MonoUtils.instance.spheres[num]);
 		}
 		if (type == Sphere.Type.MultiColor)
 		{
-			return UnityEngine.Object.Instantiate(MonoUtils.instance.multiColor);
+            Debug.Log("3");
+            return UnityEngine.Object.Instantiate(MonoUtils.instance.multiColor);
 		}
 		if (type == Sphere.Type.Bomb)
 		{
-			return UnityEngine.Object.Instantiate(MonoUtils.instance.bomb);
+            Debug.Log("5");
+            return UnityEngine.Object.Instantiate(MonoUtils.instance.bomb);
 		}
 		if (type == Sphere.Type.Color)
 		{
-			int num2 = UnityEngine.Random.Range(0, MonoUtils.instance.spheres.Length);
+            Debug.Log("6");
+            int num2 = UnityEngine.Random.Range(0, MonoUtils.instance.spheres.Length);
 			Sphere sphere = UnityEngine.Object.Instantiate(MonoUtils.instance.sphereColors[num2]);
 			sphere.colorIndex = num2;
 			return sphere;
@@ -327,6 +331,7 @@ public class SphereController : MonoBehaviour
 		{
 			return UnityEngine.Object.Instantiate(MonoUtils.instance.black);
 		}
+        Debug.Log("10");
 		return UnityEngine.Object.Instantiate(MonoUtils.instance.spheres[(int)type.Value]);
 	}
 

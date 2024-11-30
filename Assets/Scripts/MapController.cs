@@ -45,7 +45,7 @@ public class MapController : BaseController
 	public void OpenShop()
 	{
 		ShopDialog shopDialog = (ShopDialog)DialogController.instance.GetDialog(DialogType.Shop);
-		shopDialog.GetComponent<TabBehaviour>().SetCurrentTab(0);
+		//shopDialog.GetComponent<TabBehaviour>().SetCurrentTab(0);
 		DialogController.instance.ShowDialog(shopDialog);
 	}
 }
