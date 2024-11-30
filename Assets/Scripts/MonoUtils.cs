@@ -38,7 +38,7 @@ public class MonoUtils : MonoBehaviour
 
 	public GameObject smokeHolePrefab;
 
-	public GameObject ballShadow;
+	//public GameObject ballShadow;
 
 	public GameObject iceCover;
 

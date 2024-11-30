@@ -204,12 +204,12 @@ public class Sphere : MonoBehaviour
 		}
 		if (Utils.IsNormalBall(this) || type == Type.MultiColor || type == Type.MultiColor)
 		{
-			shadow = UnityEngine.Object.Instantiate(MonoUtils.instance.ballShadow);
-			if (controller != null)
-			{
-				shadow.transform.SetParent(controller.transform);
-			}
-			UpdateShadow();
+			//shadow = UnityEngine.Object.Instantiate(MonoUtils.instance.ballShadow);
+			//if (controller != null)
+			//{
+			//	shadow.transform.SetParent(controller.transform);
+			//}
+			//UpdateShadow();
 		}
 		if (iceLayer != 0)
 		{
@@ -290,7 +290,7 @@ public class Sphere : MonoBehaviour
 
 	private void UpdateShadow()
 	{
-		shadow.transform.position = base.transform.position + new Vector3(0.07f, -0.07f, 0f);
+		//shadow.transform.position = base.transform.position + new Vector3(0.07f, -0.07f, 0f);
 	}
 
 	private void UpdateIceCover()
@@ -330,10 +330,10 @@ public class Sphere : MonoBehaviour
 		{
 			base.transform.Rotate(Vector3.forward * Time.deltaTime * -200f, Space.World);
 		}
-		if (shadow != null)
-		{
-			UpdateShadow();
-		}
+		//if (shadow != null)
+		//{
+		//	UpdateShadow();
+		//}
 		if (iceLayer != 0)
 		{
 			UpdateIceCover();
