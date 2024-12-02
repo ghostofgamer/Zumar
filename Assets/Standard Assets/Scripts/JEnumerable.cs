@@ -5,17 +5,17 @@ using System.Linq;
 
 namespace Newtonsoft.Json.Linq
 {
-	public struct JEnumerable<T> : IJEnumerable<T>, IEnumerable<T>, IEnumerable where T : JToken
+	public struct JEnumerable<T> : IEnumerable<T>, IEnumerable where T : JToken
 	{
 		public static readonly JEnumerable<T> Empty = new JEnumerable<T>(Enumerable.Empty<T>());
 
 		private IEnumerable<T> _enumerable;
 
-		public IJEnumerable<JToken> this[object key] => new JEnumerable<JToken>(_enumerable.Values<T, JToken>(key));
+		//public IJEnumerable<JToken> this[object key] => new JEnumerable<JToken>(_enumerable.Values<T, JToken>(key));
 
 		public JEnumerable(IEnumerable<T> enumerable)
 		{
-			ValidationUtils.ArgumentNotNull(enumerable, "enumerable");
+			//ValidationUtils.ArgumentNotNull(enumerable, "enumerable");
 			_enumerable = enumerable;
 		}
 
