@@ -39,7 +39,7 @@ public class CompleteDialog : Dialog
 
 	private IEnumerator StarAnimation()
 	{
-		CurrencyController.SetBalance(10);
+		CurrencyController.SetBalance(16);
 		yield return new WaitForSeconds(0.7f);
 		string trigger = (numStars == 0) ? null : ((numStars == 1) ? "one" : ((numStars != 2) ? "three" : "two"));
 		if (trigger != null)

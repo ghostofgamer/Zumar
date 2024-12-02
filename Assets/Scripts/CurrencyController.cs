@@ -10,6 +10,8 @@ public class CurrencyController
 
 	public static Action<int> onBallanceIncreased;
 
+	int balanceCurrent;
+
 	public static int GetBalance()
 	{
 		return CPlayerPrefs.GetInt("coins", 10);
@@ -17,7 +19,7 @@ public class CurrencyController
 
 	public static void SetBalance(int value)
 	{
-		CPlayerPrefs.SetInt("coins", value);
+        CPlayerPrefs.SetInt("coins", CPlayerPrefs.GetInt("coins", 10)+ value);
 		CPlayerPrefs.Save();
 	}
 

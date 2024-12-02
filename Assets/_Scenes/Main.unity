@@ -3113,8 +3113,6 @@ MonoBehaviour:
   coinMoveTarget: {fileID: 1790492667549790773}
   smokeHolePrefab: {fileID: 1790492663808471591, guid: 7c995c4f3707da74b93daf3564068832,
     type: 3}
-  ballShadow: {fileID: 1790492663808471580, guid: 848818813add318408fd1ae862b8cbf1,
-    type: 3}
   iceCover: {fileID: 1790492663808471603, guid: a4b837ab957c99349af713cee63300c3,
     type: 3}
   iceCoverSprites:
@@ -3131,7 +3129,7 @@ MonoBehaviour:
   bonusText: {fileID: 1790492663808471556, guid: b1d4e714e3a55af478be788412af7df1,
     type: 3}
   items:
-  - {fileID: 1790492665704297513, guid: 102b28f86dde26e4bb6fa0e85b861c5a, type: 3}
+  - {fileID: 1790492665704297494, guid: bdb01ac0cf58512479588798f39019a2, type: 3}
   - {fileID: 1790492665704297532, guid: 9582c6bf2f93c3f4db9a3569adc12301, type: 3}
   - {fileID: 1790492665704297529, guid: 2ebe02699d2d8204f99e009a661d5113, type: 3}
   - {fileID: 1790492665704297533, guid: cd7c8809686839b45885ea7e9f2914c0, type: 3}
